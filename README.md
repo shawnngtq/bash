@@ -78,6 +78,21 @@ do
 done
 ```
 
+## Special variables
+| Variables | Description |
+| --- | --- |
+| $0 | The name of the bash script |
+| $1-9 | The 1st 9 arguments to the bash script |
+| $# | The # of arguments passed to the bash script |
+| $@ | All the arguments supplied to the bash script |
+| $? | The exit status of the last run process |
+| $$ | The process ID of the current script |
+| $USER | The username of the user running the script |
+| $HOSTNAME | The hostname of the machine the script is running on |
+| $SECONDS | The # of seconds since the script was started |
+| $RANDOM | Returns a different random # each time is it referred to |
+| $LINENO | Returns the current line number in the bash script |
+
 ## Test command
 | Operator | Description |
 | --- | --- |
