@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+	<branch lang="de-DE">
+		<team id="011">
+			<name status="on">Develop</name>
+			<size>8</size>
+		</team>
+	</branch>
+	<branch lang="en-US">
+		<team id="021">
+			<name status="off">Sales</name>
+			<size>5</size>
+		</team>
+		<team id="022">
+			<name status="on">QA</name>
+			<size>2</size>
+		</team>
+	</branch>
+	<branch lang="de-CH">
+		<team id="031">
+			<name status="on">Develop</name>
+			<size>5</size>
+		</team>
+		<team id="032">
+			<name status="off">Consultant</name>
+			<size>3</size>
+		</team>
+	</branch>
+</company>

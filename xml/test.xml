@@ -1,0 +1,2 @@
+<?ignore xmllint --xpath "string(//footag)" <file> ?>
+<footag>TastyGoodness</footag>
