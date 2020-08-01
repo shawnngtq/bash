@@ -110,3 +110,30 @@ done
 | -s FILE | FILE exists and it's size is greater than zero (ie. it is not empty). |
 | -w FILE | FILE exists and the write permission is granted. |
 | -x FILE | FILE exists and the execute permission is granted. |
+
+## Fix jupyter notebook git conflict using regex
+
+```
+<<<<<<< HEAD
+      "CPU times: user 158 ms, sys: 11.7 ms, total: 169 ms\n",
+      "Wall time: 2.29 s\n"
+=======
+      "CPU times: user 320 ms, sys: 19.7 ms, total: 340 ms\n",
+      "Wall time: 6.24 s\n"
+>>>>>>> 43534314634139e3aae42d5d46eb14402b3f8015
+
+
+<<<<<<< HEAD
+       "      <td>THE QUINTET</td>\n",
+=======
+       "      <td>TAIPAN GRAND</td>\n",
+>>>>>>> 43534314634139e3aae42d5d46eb14402b3f8015
+       "      <td>2</td>\n",
+       "      <td>0.033881</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+```
+
+```bash
+(?s)(\=\=\=\=\=\=\=)(\n.*?)(>>>>>>>)
+```
